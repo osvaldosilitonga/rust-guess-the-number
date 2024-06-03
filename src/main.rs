@@ -18,7 +18,14 @@ fn main() {
             println!("\n--- Congratulation ---");
             println!("Result Number : {}", number);
             println!("Your Guess : {}", guess);
-            println!("Attemp : {}", attempt);
+            println!("Attempt : {}", attempt);
+            break
+        }
+        if attempt >= 5 {
+            println!("\n--- Oh No! You Failed ---");
+            println!("Result Number : {}", number);
+            println!("Your Guess : {}", guess);
+            println!("Attempt : {}", attempt);
             break
         }
 
